@@ -1,0 +1,56 @@
+.recetas-bg {
+  background-color: #F9FAFB;
+}
+.recetas-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3A7CA5;
+  margin-bottom: 1.5rem;
+}
+.recetas-filtros {
+  margin-bottom: 1.5rem;
+}
+.recetas-select {
+  border: 1px solid #E5E7EB;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: #1F2937;
+  background: #fff;
+}
+.recetas-list {
+  max-height: 70vh;
+}
+.receta-card {
+  background: #fff;
+  border: 1px solid #E5E7EB;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(58,124,165,0.08);
+  transition: box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+.receta-card:hover {
+  box-shadow: 0 4px 16px rgba(58,124,165,0.15);
+}
+.receta-img {
+  border-radius: 0.75rem;
+  margin-bottom: 0.75rem;
+  height: 10rem;
+  object-fit: cover;
+}
+.receta-nombre {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #3A7CA5;
+  margin-bottom: 0.25rem;
+}
+.receta-tipo {
+  color: #6B7280;
+  margin-bottom: 0.5rem;
+}
+.receta-tiempo {
+  color: #FF7A59;
+  font-weight: bold;
+}

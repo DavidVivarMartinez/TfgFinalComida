@@ -1,35 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Home from './pages/Home/Home';
+import Recetas from './pages/Recetas/Recetas';
+import RecetaDetalle from './pages/RecetaDetalle/RecetaDetalle';
+import NotFound from './pages/NotFound/NotFound';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <Router>
+      <nav className="bg-white border-b border-gray-200 px-6 py-4 flex justify-between items-center shadow-sm">
+        <Link to="/" className="text-2xl font-bold text-[#3A7CA5]">Recetas Serenity</Link>
+        <div className="flex gap-6">
+          <Link to="/" className="text-gray-700 hover:text-[#3A7CA5] font-medium">Inicio</Link>
+          <Link to="/recetas" className="text-gray-700 hover:text-[#3A7CA5] font-medium">Recetas</Link>
+        </div>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/recetas" element={<Recetas />} />
+        <Route path="/receta/:id" element={<RecetaDetalle />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

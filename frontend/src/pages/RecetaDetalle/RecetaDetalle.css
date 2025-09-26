@@ -1,0 +1,58 @@
+.detalle-bg {
+  background-color: #F9FAFB;
+}
+.detalle-card {
+  background: #fff;
+  border: 1px solid #E5E7EB;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(58,124,165,0.08);
+  padding: 2rem;
+}
+.detalle-img {
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
+}
+.detalle-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3A7CA5;
+  margin-bottom: 0.5rem;
+}
+.detalle-info {
+  color: #6B7280;
+  margin-bottom: 1rem;
+}
+.detalle-section {
+  margin-bottom: 1.5rem;
+}
+.detalle-sub {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1F2937;
+  margin-bottom: 0.5rem;
+}
+.detalle-list {
+  list-style: disc;
+  padding-left: 1.5rem;
+  color: #6B7280;
+}
+.detalle-nutri {
+  color: #10B981;
+  font-weight: bold;
+}
+.detalle-btn {
+  background-color: #FF7A59;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+  display: inline-block;
+}
+.detalle-btn:hover {
+  background-color: #EF4444;
+}
